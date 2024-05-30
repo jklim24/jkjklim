@@ -4,6 +4,7 @@ typedef struct{
     char name[7];
     int score;
 }Person;
+
 void printScoreStars(Person* persons, int len1){
     int n;
     n=((*persons).score-((*persons).score)%5)/5;
@@ -16,6 +17,7 @@ void printScoreStars(Person* persons, int len1){
     }
     printf("\n");
 }
+
 int main(){
     Person p1,p2,p3;
     Person* pp1=&p1;
